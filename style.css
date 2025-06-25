@@ -152,22 +152,27 @@ section {
     flex-wrap: wrap;
 
     opacity: 0;
-
-    animation-name: fadeInScroll;
-    animation-duration: 1s;
-    /* tempo não importa muito nesse caso */
-    animation-fill-mode: both;
-    animation-timing-function: linear;
-    /* transição uniforme */
-    animation-timeline: view();
-    /* scroll-driven */
-    animation-range: entry 20% cover 40%;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s;
 
     background-color: rgba(255, 255, 255, 0.034);
     color: #fefefe;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(4px);
 }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 section>* {
     flex-wrap: wrap;
@@ -191,18 +196,6 @@ section>* {
     flex-shrink: 0;
     display: block;
 }
-
-/* Animação suave apenas de opacidade */
-@keyframes fadeInScroll {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
 
 .containerLocalizacao {
     background-color: #f9f3ec;
