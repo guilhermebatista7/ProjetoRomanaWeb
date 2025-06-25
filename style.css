@@ -154,10 +154,13 @@ section {
     opacity: 0;
 
     animation-name: fadeInScroll;
-    animation-duration: 1s; /* tempo não importa muito nesse caso */
+    animation-duration: 1s;
+    /* tempo não importa muito nesse caso */
     animation-fill-mode: both;
-    animation-timing-function: linear; /* transição uniforme */
-    animation-timeline: view(); /* scroll-driven */
+    animation-timing-function: linear;
+    /* transição uniforme */
+    animation-timeline: view();
+    /* scroll-driven */
     animation-range: entry 20% cover 40%;
 
     background-color: rgba(255, 255, 255, 0.034);
@@ -166,14 +169,13 @@ section {
     backdrop-filter: blur(4px);
 }
 
-section > * {
+section>* {
     flex-wrap: wrap;
     max-width: 100%;
     text-align: center;
 }
 
 .pizzaAnimation {
-    /* nenhuma animação lateral */
     flex-direction: column;
     margin: 10px;
     justify-self: center;
@@ -181,8 +183,13 @@ section > * {
 }
 
 .pizzaAnimation img {
+    width: 100%;
     max-width: 270px;
+    height: auto;
     border-radius: 12px;
+    object-fit: cover;
+    flex-shrink: 0;
+    display: block;
 }
 
 /* Animação suave apenas de opacidade */
@@ -244,8 +251,8 @@ section > * {
     margin-top: 8px;
 }
 
-@media (max-width: 700px){
-    .navbar{
+@media (max-width: 700px) {
+    .navbar {
         width: 98vw;
     }
 }
