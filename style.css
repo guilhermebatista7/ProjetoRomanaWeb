@@ -30,6 +30,7 @@
 
 .navbar {
     margin: -9px 0px;
+    width: 100vw;
 }
 
 .navbar-toggler {
