@@ -4,10 +4,6 @@ body{
   overflow-y: hidden;  
 }
 
-*{
-  border: 1px solid red;
-}
-
 #containerContato {
   position: relative;
   margin-top: 100px;
