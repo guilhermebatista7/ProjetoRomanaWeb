@@ -133,6 +133,8 @@ section {
     min-height: auto;
     border-radius: 10px;
     margin: 5px;
+    max-width: 100%;
+    overflow: hidden;
 
     opacity: 0;
 
@@ -165,9 +167,8 @@ section {
     animation-name: slideInRight;
 }
 
-.pizzaAnimation img,
-video {
-    max-width: 300px;
+.pizzaAnimation img {
+    max-width: 270px;
     border-radius: 12px;
 }
 
