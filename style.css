@@ -151,8 +151,6 @@ section {
     border-radius: 10px;
     margin: 5px;
     max-width: 100%;
-    overflow: hidden;
-
     opacity: 0;
 
     animation-duration: 5s;
@@ -172,6 +170,10 @@ section {
     backdrop-filter: blur(4px);
 }
 
+section > * {
+    flex-wrap: wrap;
+    max-width: 100%;
+}
 
 .pizza-left {
     transform: translateX(-100px);
